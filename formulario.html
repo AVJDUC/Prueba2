@@ -19,14 +19,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            $.getJSON('https://mindicador.cl/api', function(data) {
-                var dailyIndicators = data;
-                $("<p/>", {
-                    html: " " + dailyIndicators.uf.valor
-                }).appendTo("h4");
-            }).fail(function() {
-                console.log('Error al consumir la API!');
-            });
+
         });
     </script>
 </head>
@@ -55,7 +48,7 @@
                         <a class="nav-link" aria-current="page" href="home.html">FUAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FORMULARIO</a>
+                        <a class="nav-link" href="formulario.html">FORMULARIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -69,9 +62,8 @@
     <!-- Body -->
 
     <div class="container" id="puno">
-        <h3>Que es el FUAS?</h3>
-        <P>Es el Formulario Único de Acreditación Socioeconómica creado por el Mineduc para facilitar tu inscripción simultánea a Gratuidad y a todas las becas y créditos de arancel, de acuerdo al reglamento vigente. A través de este instrumento, es posible
-            conocer la situación socioeconómica del postulante y su grupo familiar. Esta información se verifica luego con diversas bases de datos de organismos del Estado.
+        <h3>Consideraciones antes de completar</h3>
+        <P>Todos los campos en el formulario son obligatorios (excepto telefono)
         </P>
     </div>
 
