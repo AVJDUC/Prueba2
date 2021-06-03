@@ -261,6 +261,10 @@ input[type=text]:placeholder {
 
 /* Propiedades creadas */
 
+body {
+    font-size: 1.4rem;
+}
+
 #logoh {
     height: 185px;
     width: 167px;
@@ -269,4 +273,86 @@ input[type=text]:placeholder {
 
 #theader {
     text-align: center;
+}
+
+#puno {
+    margin-top: 90px;
+    width: 50%;
+}
+
+#ptwo {
+    margin-top: 70px;
+    width: 50%;
+}
+
+#ptre {
+    margin-top: 70px;
+    width: 50%;
+    margin-bottom: 70px;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
+.bicolor {
+    height: 2px;
+    min-height: 1px;
+    position: relative;
+}
+
+.bicolor span {
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+.bicolor span.azul {
+    background: #0f69b4 none repeat scroll 0 0;
+    width: 46%;
+}
+
+.bicolor span.rojo {
+    background: #eb3646 none repeat scroll 0 0;
+    width: 54%;
+}
+
+.barraFooter {
+    background: rgba(0, 0, 0, 0) url(https://portal.beneficiosestudiantiles.cl/sites/all/themes/framework/images/logofooter.png) no-repeat scroll 0 0;
+    display: block;
+    height: 15px;
+    margin-top: 22px;
+}
+
+#fima {
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+#fima1 {
+    margin-bottom: 20px;
+}
+
+#fcont {
+    margin-top: 110px;
+    width: 75%;
+    margin-right: 70px;
+    margin-bottom: 80px;
+}
+
+#ctit {
+    margin-bottom: 15px;
+}
+
+#cbtn {
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 10em;
+}
+
+#form1 {
+    width: 75%;
 }

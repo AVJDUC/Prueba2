@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Latest compiled and minified JQuery with Ajax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <title>Beneficios estudiantiles</title>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#log-validate").validate();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -29,9 +38,9 @@
             </div>
 
             <!-- Login Form -->
-            <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuario">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="contraseña">
+            <form id="log-validate">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuario" required>
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="contraseña" required>
                 <input type="submit" class="fadeIn fourth" value="Ingresar">
             </form>
 
