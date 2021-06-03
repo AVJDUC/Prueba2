@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Latest compiled and minified JQuery with Ajax -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <title>Beneficios estudiantiles</title>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#form1").validate({
+                rules: {
+                    nombre: {
+                        required: true
+
+
+                    },
+                    email: {
+                        required: true,
+                        email: true
+
+                    },
+
+                    coment: {
+                        required: true,
+                        minlenght: 50
+                    }
+                },
+                messages: {
+                    nombre: {
+                        required: "Por favor ingrese su nombre"
+
+                    },
+                    email: {
+                        required: "Por favor ingrese su correo",
+                        email: "El correo debe tener el siguiente formato: abc@ejemplo.cl"
+
+                    },
+
+                    coment: {
+                        required: "Por favor redacte su motivacion",
+                        minlenght: "Debe ingresar al menos 50 caracteres"
+                    },
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <img src="img/logo_superior.jpg" id="logoh" alt="logo_superior">
+
+        </div>
+        <div class="container">
+            <h1 id="theader">Portal Beneficios estudiantiles</h1>
+        </div>
+
+
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">FUAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FORMULARIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+
+    <div class="container" id="fcont">
+        <div class="row">
+            <form id="form1" action="">
+                <div class="mb-3">
+
+                    <label for="nombre" class="form-label">Nombre <span>(Completo)</span></label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="div"></div>
+
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                    <div class="div"></div>
+
+
+                    <label for="coment" class="form-label">Déjanos tu mensaje</label>
+                    <textarea class="form-control" placeholder="Escribe aqui tu mensaje... " name="coment" id="coment" required></textarea>
+                    <div class="div"></div>
+
+                    <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="bicolor">
+            <span class="azul"></span>
+            <span class="rojo"></span>
+        </div>
+        <div class="container" id="fima">
+            <img src="img/banner-gobierno-transparente.jpg" id=fima1 alt="">
+            <br>
+            <img src="img/banner-transparencia.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <p>Ministerio de Educación - Teléfono +56 2 24066000 - Dirección Av. Libertador Bernardo O'Higgins 1371</p>
+        </div>
+
+        <div class="barraFooter"></div>
+
+    </footer>
+</body>
+
+</html>
